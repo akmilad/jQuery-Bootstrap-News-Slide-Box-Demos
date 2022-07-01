@@ -1,0 +1,155 @@
+<!-- This Code All Right Reserved By Ak Milad -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery Bootstrap News Box Plugin Demos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="css/site.css?v3" rel="stylesheet" type="text/css" />
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <h1 style="margin-top:50px" align="center">jQuery Bootstrap News Slide Box Demos</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card panel-default">
+          <div class="card-header"> <span class="glyphicon glyphicon-list-alt"></span><b>News</b></div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="demo1">
+                  <li class="news-item">
+                    <table cellpadding="4">
+                      <tr>
+                        <td><img src="images/1.png" width="60" class="img-circle" /></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a
+                            href="#">Read more...</a></td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li class="news-item">
+                    <table cellpadding="4">
+                      <tr>
+                        <td><img src="images/2.png" width="60" class="img-circle" /></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a
+                            href="#">Read more...</a></td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li class="news-item">
+                    <table cellpadding="4">
+                      <tr>
+                        <td><img src="images/3.png" width="60" class="img-circle" /></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a
+                            href="#">Read more...</a></td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li class="news-item">
+                    <table cellpadding="4">
+                      <tr>
+                        <td><img src="images/4.png" width="60" class="img-circle" /></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a
+                            href="#">Read more...</a></td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li class="news-item">
+                    <table cellpadding="4">
+                      <tr>
+                        <td><img src="images/5.png" width="60" class="img-circle" /></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a
+                            href="#">Read more...</a></td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li class="news-item">
+                    <table cellpadding="4">
+                      <tr>
+                        <td><img src="images/6.png" width="60" class="img-circle" /></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a
+                            href="#">Read more...</a></td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li class="news-item">
+                    <table cellpadding="4">
+                      <tr>
+                        <td><img src="images/7.png" width="60" class="img-circle" /></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a
+                            href="#">Read more...</a></td>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer"> Design By: Akmilad </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- javascript File -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="scripts/jquery.bootstrap.newsbox.js?v3" type="text/javascript"></script>
+
+
+
+  <script type="text/javascript">
+    $(function () {
+      $(".demo1").bootstrapNews({
+        newsPerPage: 4,
+        autoplay: true,
+        pauseOnHover: true,
+        direction: 'up',
+        newsTickerInterval: 4000,
+        onToDo: function () {
+          //console.log(this);
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  <script>
+    try {
+      fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+        return true;
+      }).catch(function (e) {
+        var carbonScript = document.createElement("script");
+        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+        carbonScript.id = "_carbonads_js";
+        document.getElementById("carbon-block").appendChild(carbonScript);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  </script>
+</body>
+
+</html>
